@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>Request Appointment | Dr. Aditya Ayurveda Clinic</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base { 
+      html, body { margin: 0; padding: 0; } 
+      body { overscroll-behavior: none; } 
+      main > :first-child { margin-top: 0 !important; } 
+      main > :last-child { margin-bottom: 0 !important; } 
+    } 
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "luxury-forest": "#0B3B2E",
+            "luxury-forest-dark": "#06241C",
+            "luxury-emerald": "#145C48",
+            "luxury-gold": "#C9A45C",
+            "luxury-gold-light": "#DFC286",
+            "luxury-gold-dark": "#A88339",
+            "luxury-gold-subtle": "rgba(201, 164, 92, 0.12)",
+            "warm-ivory": "#F7F3EA",
+            "warm-ivory-light": "#FDFBF7",
+            "soft-beige": "#EDE5D5",
+            "soft-beige-dark": "#DFD5C2",
+            "deep-charcoal": "#202723",
+            "muted-greygreen": "#4A5A52",
+            "border-gold": "rgba(201, 164, 92, 0.35)",
+            "border-beige": "rgba(223, 213, 194, 0.7)"
+          },
+          fontFamily: {
+            headline: ["Playfair Display", "serif"],
+            body: ["Plus Jakarta Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-warm-ivory font-body text-deep-charcoal antialiased selection:bg-luxury-gold selection:text-luxury-forest">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-warm-ivory/95 backdrop-blur-md border-b border-luxury-gold/20 shadow-[0_4px_24px_rgba(11,59,46,0.06)]">
+<div class="h-28 w-full max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10 flex flex-col justify-between py-2">
+<div class="flex items-center justify-between gap-3 h-14">
+<a class="flex items-center gap-3 min-w-0 group" href="index.html">
+<img alt="Dr. Aditya Ayurveda Emblem" class="h-9 sm:h-10 w-auto object-contain flex-shrink-0 transition-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AEtjO1W8gictkYE2ML89ZvZXWRRGCrzNRY_gHumv0OFT_MN8Caq8FjJrtRor1PQ3T4Yohn1xO0ZYI_Nt_s29FHoPom__qUgS7l16M3SXIZJOqQri1dqTUy2tlLau6gGjlYD-0ah3DUngmPNpzfiwvcfFIxPh3Tpb9XaVdW-7tPs11H543JAJH6P_Hh6luFH2wek48UAiO0zfD0H7obTLDozJYGaOsD2kYOJTeBsagJw_ZMXEojjIy7ueAViDWhrg"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline text-lg sm:text-xl text-luxury-forest leading-tight tracking-tight truncate font-bold">Dr. Aditya Ayurveda Clinic</span>
+<span class="font-body text-[10px] sm:text-xs uppercase tracking-widest text-luxury-gold font-semibold truncate">BAMS | Online Ayurveda Consultation</span>
+</div>
+</a>
+<div class="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+<a class="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-luxury-gold hover:bg-luxury-gold-dark text-luxury-forest font-semibold text-xs sm:text-sm tracking-wide transition-all shadow-[0_4px_14px_rgba(201,164,92,0.35)] hover:shadow-md" data-path="appointment-booking" href="appointment.html">
+<span class="whitespace-nowrap font-bold">Book Consultation</span>
+</a>
+<div class="p-0.5 rounded-full ring-2 ring-luxury-gold/50 shadow-sm">
+<img alt="Dr. Aditya Shinde" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1U5wYXSTKrvwLTIPzgwYHus9S7lyvriE_sFkGq3AOJkzE96kUCQJNXFnjOAH5tASOIymQkekzazSpQW3Hos_MWalkmLeZYo32kiBn4RJtA8ehs7iocEz5IHZtepVvg7JVCqXSUzbhy1Od_RzOtUiimNNbESVhbNV8Ugnlxi4IJz6OY9WxULRntpfJu1ZM-bykNTBUpuaQfWsQO_jxpi5OOSSCOXEGFTYUa3ilymigPER15w8ly8CWCLkrxiIoXqmOqPprd7tjaFyg"/>
+</div>
+</div>
+</div>
+<nav class="flex items-center justify-between sm:justify-start gap-1 sm:gap-6 border-t border-luxury-gold/15 pt-1.5 overflow-x-auto text-xs sm:text-sm">
+<a class="px-3 py-1 rounded-full text-muted-greygreen hover:text-luxury-forest hover:bg-soft-beige transition-colors font-medium whitespace-nowrap" data-path="home" href="index.html">Home</a>
+<a class="px-3 py-1 rounded-full text-muted-greygreen hover:text-luxury-forest hover:bg-soft-beige transition-colors font-medium whitespace-nowrap" data-path="services" href="services.html">Services</a>
+<a class="px-3 py-1 rounded-full text-muted-greygreen hover:text-luxury-forest hover:bg-soft-beige transition-colors font-medium whitespace-nowrap" data-path="about-doctor" href="about.html">About Doctor</a>
+<a aria-current="page" class="px-3.5 py-1 rounded-full transition-colors bg-luxury-forest text-warm-ivory border border-luxury-gold/40 font-semibold shadow-sm whitespace-nowrap" data-path="appointment-booking" href="appointment.html">Appointment</a>
+<a class="px-3 py-1 rounded-full text-muted-greygreen hover:text-luxury-forest hover:bg-soft-beige transition-colors font-medium whitespace-nowrap" data-path="contact-&amp;-directions" href="contact.html">Contact</a>
+<a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-luxury-emerald hover:text-luxury-forest hover:bg-luxury-gold-subtle transition-colors font-semibold ml-auto border border-luxury-emerald/30 whitespace-nowrap" href="https://wa.me/919657969379" rel="noopener noreferrer" target="_blank">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          WhatsApp Consult
+        </a>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main class="w-full pt-28 bg-warm-ivory min-h-screen">
+<div class="flex flex-col w-full">
+<section class="relative w-full overflow-hidden pb-16 pt-8">
+<div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10">
+<!-- Page Intro Header & Trust Badges -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8 border-b border-luxury-gold/25">
+<div class="space-y-3 max-w-2xl">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-soft-beige border border-luxury-gold/40 text-luxury-gold-dark shadow-sm">
+<span class="w-2 h-2 rounded-full bg-luxury-gold"></span>
+<span class="text-xs uppercase tracking-widest font-bold">Guided Clinical Consultation Intake</span>
+</div>
+<h1 class="font-headline text-3xl sm:text-4xl lg:text-5xl text-luxury-forest tracking-tight font-normal leading-[1.15]">
+                Request an Appointment
+              </h1>
+<p class="text-sm sm:text-base text-muted-greygreen leading-relaxed">
+                Begin your journey to restorative biological harmony through individualized Ayurvedic diagnosis, classical Nadi Pariksha insights, and evidence-grounded botanical therapeutics.
+              </p>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-3 gap-2.5 sm:gap-3 p-3.5 rounded-2xl bg-soft-beige/70 border border-luxury-gold/20 shadow-[0_4px_16px_rgba(11,59,46,0.03)]">
+<div class="flex items-center gap-2 sm:gap-2.5">
+<div class="w-8 h-8 rounded-full bg-luxury-forest text-luxury-gold flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[17px]">verified</span>
+</div>
+<div class="min-w-0">
+<p class="text-xs sm:text-sm text-luxury-forest font-bold truncate">Dr. Aditya Shinde</p>
+<p class="text-[11px] text-muted-greygreen truncate">BAMS (MUHS)</p>
+</div>
+</div>
+<div class="flex items-center gap-2 sm:gap-2.5 border-l border-luxury-gold/20 pl-2.5">
+<div class="w-8 h-8 rounded-full bg-luxury-emerald text-warm-ivory flex items-center justify-center flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[17px]">lock</span>
+</div>
+<div class="min-w-0">
+<p class="text-xs sm:text-sm text-luxury-forest font-bold truncate">Confidential</p>
+<p class="text-[11px] text-muted-greygreen truncate">Clinical Privacy</p>
+</div>
+</div>
+<div class="flex items-center gap-2 sm:gap-2.5 border-l border-luxury-gold/20 pl-2.5">
+<div class="w-8 h-8 rounded-full bg-luxury-gold text-luxury-forest flex items-center justify-center flex-shrink-0 shadow-sm font-bold">
+<span class="material-symbols-outlined text-[17px]">bolt</span>
+</div>
+<div class="min-w-0">
+<p class="text-xs sm:text-sm text-luxury-forest font-bold truncate">Instant Dispatch</p>
+<p class="text-[11px] text-muted-greygreen truncate">WhatsApp Triage</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Guided 5-Step Progress Bar -->
+<div class="my-8 p-3 sm:p-4 rounded-2xl bg-warm-ivory-light border border-luxury-gold/30 shadow-[0_4px_20px_rgba(11,59,46,0.04)]">
+<div class="flex items-center justify-between overflow-x-auto gap-2 sm:gap-3 py-1 no-scrollbar" id="wizardProgressContainer">
+<!-- Step 1 Tab -->
+<button class="step-nav-btn flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-luxury-forest text-warm-ivory ring-2 ring-luxury-gold shadow-md text-left transition-all flex-shrink-0" id="stepTab-1" onclick="goToStep(1)" type="button">
+<span class="w-6 h-6 rounded-full bg-luxury-gold text-luxury-forest text-xs flex items-center justify-center font-bold">01</span>
+<span class="text-xs sm:text-sm font-semibold tracking-wide whitespace-nowrap">Service</span>
+</button>
+<div class="h-0.5 w-4 sm:w-8 bg-soft-beige-dark rounded flex-shrink-0" id="stepLine-1"></div>
+<!-- Step 2 Tab -->
+<button class="step-nav-btn flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-soft-beige text-muted-greygreen hover:text-luxury-forest text-left transition-all flex-shrink-0 border border-transparent" id="stepTab-2" onclick="goToStep(2)" type="button">
+<span class="w-6 h-6 rounded-full bg-soft-beige-dark text-muted-greygreen text-xs flex items-center justify-center font-bold">02</span>
+<span class="text-xs sm:text-sm font-semibold tracking-wide whitespace-nowrap">Reason</span>
+</button>
+<div class="h-0.5 w-4 sm:w-8 bg-soft-beige-dark rounded flex-shrink-0" id="stepLine-2"></div>
+<!-- Step 3 Tab -->
+<button class="step-nav-btn flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-soft-beige text-muted-greygreen hover:text-luxury-forest text-left transition-all flex-shrink-0 border border-transparent" id="stepTab-3" onclick="goToStep(3)" type="button">
+<span class="w-6 h-6 rounded-full bg-soft-beige-dark text-muted-greygreen text-xs flex items-center justify-center font-bold">03</span>
+<span class="text-xs sm:text-sm font-semibold tracking-wide whitespace-nowrap">Date</span>
+</button>
+<div class="h-0.5 w-4 sm:w-8 bg-soft-beige-dark rounded flex-shrink-0" id="stepLine-3"></div>
+<!-- Step 4 Tab -->
+<button class="step-nav-btn flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-soft-beige text-muted-greygreen hover:text-luxury-forest text-left transition-all flex-shrink-0 border border-transparent" id="stepTab-4" onclick="goToStep(4)" type="button">
+<span class="w-6 h-6 rounded-full bg-soft-beige-dark text-muted-greygreen text-xs flex items-center justify-center font-bold">04</span>
+<span class="text-xs sm:text-sm font-semibold tracking-wide whitespace-nowrap">Time</span>
+</button>
+<div class="h-0.5 w-4 sm:w-8 bg-soft-beige-dark rounded flex-shrink-0" id="stepLine-4"></div>
+<!-- Step 5 Tab -->
+<button class="step-nav-btn flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-soft-beige text-muted-greygreen hover:text-luxury-forest text-left transition-all flex-shrink-0 border border-transparent" id="stepTab-5" onclick="goToStep(5)" type="button">
+<span class="w-6 h-6 rounded-full bg-soft-beige-dark text-muted-greygreen text-xs flex items-center justify-center font-bold">05</span>
+<span class="text-xs sm:text-sm font-semibold tracking-wide whitespace-nowrap">Details</span>
+</button>
+</div>
+</div>
+<!-- Wizard Body: Left interactive form & Right Live Dossier -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Wizard Columns -->
+<div class="lg:col-span-8 flex flex-col gap-6">
+<!-- STEP 1: SERVICE SELECTION -->
+<div class="wizard-panel rounded-2xl bg-warm-ivory-light p-6 sm:p-8 border border-luxury-gold/30 shadow-[0_6px_24px_rgba(11,59,46,0.04)]" id="step-1">
+<div class="flex items-center justify-between pb-6 border-b border-luxury-gold/20">
+<div>
+<span class="text-xs uppercase tracking-widest text-luxury-gold font-bold">Step 01 of 05</span>
+<h2 class="font-headline text-2xl sm:text-3xl text-luxury-forest font-semibold mt-0.5">Select Clinical Modality</h2>
+</div>
+<div class="w-12 h-12 rounded-full bg-soft-beige flex items-center justify-center text-luxury-forest border border-luxury-gold/40">
+<span class="material-symbols-outlined text-[26px]">spa</span>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6" id="serviceCardsGrid">
+<!-- Service 1 -->
+<div class="service-card cursor-pointer rounded-xl bg-warm-ivory p-4 transition-all duration-200 border-2 border-luxury-forest ring-1 ring-luxury-gold/60 shadow-md" data-duration="45 Mins" data-fee="₹900" data-service="Online Ayurveda Consultation" onclick="toggleServiceCard(this, 'Online Ayurveda Consultation', '45 Mins', '₹900')">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-soft-beige flex items-center justify-center text-luxury-forest border border-luxury-gold/30">
+<span class="material-symbols-outlined text-[22px]">videocam</span>
+</div>
+<div>
+<h3 class="font-body text-base text-luxury-forest font-bold">Online Ayurveda Consult</h3>
+<p class="text-xs text-luxury-gold-dark font-semibold">45 Mins Duration</p>
+</div>
+</div>
+<span class="material-symbols-outlined expand-icon text-luxury-forest text-[20px] transition-transform duration-200 rotate-180">expand_more</span>
+</div>
+<div class="service-details mt-3 pt-3 border-t border-luxury-gold/20">
+<p class="text-xs sm:text-sm text-muted-greygreen leading-relaxed mb-3">
+                        Exhaustive telemedicine Prakriti evaluation, dosha pathology assessment, personalized herbal recommendations, and digital intake chart review.
+                      </p>
+<div class="flex items-center justify-between pt-1">
+<span class="text-xs text-luxury-forest font-bold uppercase tracking-wider">Telehealth Video / Audio</span>
+<span class="px-2.5 py-1 rounded-full bg-luxury-forest text-warm-ivory text-xs font-semibold">Selected</span>
+</div>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="service-card cursor-pointer rounded-xl bg-warm-ivory p-4 transition-all duration-200 border border-border-beige hover:border-luxury-gold/60" data-duration="30 Mins" data-fee="₹600" data-service="Lifestyle Guidance (Vihara)" onclick="toggleServiceCard(this, 'Lifestyle Guidance (Vihara)', '30 Mins', '₹600')">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-soft-beige flex items-center justify-center text-luxury-forest border border-luxury-gold/30">
+<span class="material-symbols-outlined text-[22px]">self_improvement</span>
+</div>
+<div>
+<h3 class="font-body text-base text-luxury-forest font-bold">Lifestyle Guidance</h3>
+<p class="text-xs text-luxury-gold-dark font-semibold">30 Mins (Dinacharya)</p>
+</div>
+</div>
+<span class="material-symbols-outlined expand-icon text-muted-greygreen text-[20px] transition-transform duration-200">expand_more</span>
+</div>
+<div class="service-details hidden mt-3 pt-3 border-t border-luxury-gold/20">
+<p class="text-xs sm:text-sm text-muted-greygreen leading-relaxed mb-3">
+                        Circadian restructuring, sleep hygiene alignment, sensory rejuvenation, and customized Pranayama/Yoga sequencing for metabolic stamina.
+                      </p>
+<div class="flex items-center justify-between pt-1">
+<span class="text-xs text-luxury-forest font-bold uppercase tracking-wider">Preventive Vihara</span>
+<span class="px-2.5 py-1 rounded-full bg-soft-beige text-luxury-forest text-xs font-semibold">Select</span>
+</div>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="service-card cursor-pointer rounded-xl bg-warm-ivory p-4 transition-all duration-200 border border-border-beige hover:border-luxury-gold/60" data-duration="30 Mins" data-fee="₹600" data-service="Diet &amp; Wellness Guidance (Ahara)" onclick="toggleServiceCard(this, 'Diet &amp; Wellness Guidance (Ahara)', '30 Mins', '₹600')">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-soft-beige flex items-center justify-center text-luxury-forest border border-luxury-gold/30">
+<span class="material-symbols-outlined text-[22px]">restaurant</span>
+</div>
+<div>
+<h3 class="font-body text-base text-luxury-forest font-bold">Diet &amp; Nutrition</h3>
+<p class="text-xs text-luxury-gold-dark font-semibold">30 Mins (Pathya Ahara)</p>
+</div>
+</div>
+<span class="material-symbols-outlined expand-icon text-muted-greygreen text-[20px] transition-transform duration-200">expand_more</span>
+</div>
+<div class="service-details hidden mt-3 pt-3 border-t border-luxury-gold/20">
+<p class="text-xs sm:text-sm text-muted-greygreen leading-relaxed mb-3">
+                        Gut microbiome optimization, Agni balancing, identification of incompatible food combinations (Viruddha Ahara), and therapeutic meal charts.
+                      </p>
+<div class="flex items-center justify-between pt-1">
+<span class="text-xs text-luxury-forest font-bold uppercase tracking-wider">Therapeutic Nutrition</span>
+<span class="px-2.5 py-1 rounded-full bg-soft-beige text-luxury-forest text-xs font-semibold">Select</span>
+</div>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="service-card cursor-pointer rounded-xl bg-warm-ivory p-4 transition-all duration-200 border border-border-beige hover:border-luxury-gold/60" data-duration="20 Mins" data-fee="₹450" data-service="General Consultation" onclick="toggleServiceCard(this, 'General Consultation', '20 Mins', '₹450')">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-soft-beige flex items-center justify-center text-luxury-forest border border-luxury-gold/30">
+<span class="material-symbols-outlined text-[22px]">stethoscope</span>
+</div>
+<div>
+<h3 class="font-body text-base text-luxury-forest font-bold">General Consultation</h3>
+<p class="text-xs text-luxury-gold-dark font-semibold">20 Mins Focused</p>
+</div>
+</div>
+<span class="material-symbols-outlined expand-icon text-muted-greygreen text-[20px] transition-transform duration-200">expand_more</span>
+</div>
+<div class="service-details hidden mt-3 pt-3 border-t border-luxury-gold/20">
+<p class="text-xs sm:text-sm text-muted-greygreen leading-relaxed mb-3">
+                        Quick symptomatic follow-up, seasonal cleanse advisory, or second opinion on classical Ayurvedic formulations and laboratory blood markers.
+                      </p>
+<div class="flex items-center justify-between pt-1">
+<span class="text-xs text-luxury-forest font-bold uppercase tracking-wider">Follow-up / Advisory</span>
+<span class="px-2.5 py-1 rounded-full bg-soft-beige text-luxury-forest text-xs font-semibold">Select</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="px-7 py-3 rounded-full bg-luxury-gold hover:bg-luxury-gold-dark text-luxury-forest font-bold text-sm tracking-wide flex items-center gap-2 shadow-[0_4px_16px_rgba(201,164,92,0.35)] transition-all" onclick="goToStep(2)" type="button">
+<span>Continue to Reason</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 2: REASON FOR CONSULTATION -->
+<div class="wizard-panel hidden rounded-2xl bg-warm-ivory-light p-6 sm:p-8 border border-luxury-gold/30 shadow-[0_6px_24px_rgba(11,59,46,0.04)]" id="step-2">
+<div class="flex items-center justify-between pb-4 border-b border-luxury-gold/20">
+<div>
+<span class="text-xs uppercase tracking-widest text-luxury-gold font-bold">Step 02 of 05</span>
+<h2 class="font-headline text-2xl sm:text-3xl text-luxury-forest font-semibold mt-0.5">Area You Would Like to Discuss</h2>
+</div>
+<div class="w-12 h-12 rounded-full bg-soft-beige flex items-center justify-center text-luxury-forest border border-luxury-gold/40">
+<span class="material-symbols-outlined text-[26px]">healing</span>
+</div>
+</div>
+<p class="text-xs sm:text-sm text-muted-greygreen my-5 leading-relaxed">
+                  Select one or multiple clinical areas to allow Dr. Aditya to curate targeted diagnostic inquiries and Ayurvedic pharmacopeia prior to your session.
+                </p>
+<div class="flex flex-wrap gap-2.5" id="concernsContainer">
+<button class="concern-chip px-4 py-2 rounded-full bg-luxury-forest text-warm-ivory border border-luxury-gold text-xs sm:text-sm font-semibold transition-all shadow-sm flex items-center gap-2" onclick="toggleConcern(this, 'Acidity &amp; Digestive')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Acidity / Digestive</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Joint Pain &amp; Arthritis')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Joint Pain &amp; Arthritis</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Asthma &amp; Respiratory')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Asthma</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Blood Pressure')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Blood Pressure</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Chronic Cold &amp; Allergies')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Chronic Cold</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Diabetes (Prameha)')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Diabetes</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Eye-related Conditions')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Eye-related</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Hair Fall &amp; Scalp')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Hair Fall</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Heart-related Wellness')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Heart-related</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Chronic Constipation')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Constipation</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Sleep &amp; Insomnia (Anidra)')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Sleep / Insomnia</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Liver Health (Yakrit)')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Liver Care</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Migraine &amp; Chronic Headaches')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Migraine</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Paralysis &amp; Neuromuscular')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Paralysis</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'PCOS / PCOD &amp; Hormones')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>PCOS / PCOD</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Skin (Eczema / Psoriasis)')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Skin &amp; Allergies</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Stress &amp; Mental Burnout')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Stress / Anxiety</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Thyroid Imbalance')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Thyroid</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Weight Management (Medoroga)')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Weight Management</span>
+</button>
+<button class="concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2" onclick="toggleConcern(this, 'Other Holistic Inquiry')" type="button">
+<span class="w-1.5 h-1.5 rounded-full bg-luxury-gold"></span>
+<span>Other Concern</span>
+</button>
+</div>
+<div class="mt-8 flex items-center justify-between pt-4 border-t border-luxury-gold/20">
+<button class="px-5 py-2.5 rounded-full bg-soft-beige hover:bg-soft-beige-dark text-luxury-forest font-semibold text-sm transition-colors" onclick="goToStep(1)" type="button">
+                    ← Back
+                  </button>
+<button class="px-7 py-3 rounded-full bg-luxury-gold hover:bg-luxury-gold-dark text-luxury-forest font-bold text-sm tracking-wide flex items-center gap-2 shadow-[0_4px_16px_rgba(201,164,92,0.35)] transition-all" onclick="goToStep(3)" type="button">
+<span>Continue to Preferred Date</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 3: DATE SELECTION -->
+<div class="wizard-panel hidden rounded-2xl bg-warm-ivory-light p-6 sm:p-8 border border-luxury-gold/30 shadow-[0_6px_24px_rgba(11,59,46,0.04)]" id="step-3">
+<div class="flex items-center justify-between pb-4 border-b border-luxury-gold/20">
+<div>
+<span class="text-xs uppercase tracking-widest text-luxury-gold font-bold">Step 03 of 05</span>
+<h2 class="font-headline text-2xl sm:text-3xl text-luxury-forest font-semibold mt-0.5">Select Preferred Date</h2>
+</div>
+<div class="w-12 h-12 rounded-full bg-soft-beige flex items-center justify-center text-luxury-forest border border-luxury-gold/40">
+<span class="material-symbols-outlined text-[26px]">calendar_month</span>
+</div>
+</div>
+<p class="text-xs sm:text-sm text-muted-greygreen my-5 leading-relaxed">
+                  Select your preferred appointment date (coordinated and confirmed directly with clinic availability via WhatsApp).
+                </p>
+<!-- Calendar Component -->
+<div class="p-6 rounded-2xl bg-soft-beige/50 border border-luxury-gold/25 shadow-inner">
+<div class="flex items-center justify-between mb-5">
+<button class="p-2 rounded-full bg-soft-beige text-luxury-forest hover:bg-soft-beige-dark transition-colors border border-luxury-gold/20" onclick="changeMonth(-1)" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<h3 class="font-headline text-lg sm:text-xl text-luxury-forest font-bold tracking-wide" id="calendarMonthTitle">October 2025</h3>
+<button class="p-2 rounded-full bg-soft-beige text-luxury-forest hover:bg-soft-beige-dark transition-colors border border-luxury-gold/20" onclick="changeMonth(1)" type="button">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-7 gap-1 text-center text-xs uppercase tracking-widest font-bold text-muted-greygreen mb-3">
+<span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+</div>
+<div class="grid grid-cols-7 gap-2" id="calendarDaysGrid">
+<!-- Injected Days via JS -->
+</div>
+</div>
+<div class="mt-8 flex items-center justify-between pt-4 border-t border-luxury-gold/20">
+<button class="px-5 py-2.5 rounded-full bg-soft-beige hover:bg-soft-beige-dark text-luxury-forest font-semibold text-sm transition-colors" onclick="goToStep(2)" type="button">
+                    ← Back
+                  </button>
+<button class="px-7 py-3 rounded-full bg-luxury-gold hover:bg-luxury-gold-dark text-luxury-forest font-bold text-sm tracking-wide flex items-center gap-2 shadow-[0_4px_16px_rgba(201,164,92,0.35)] transition-all" onclick="goToStep(4)" type="button">
+<span>Continue to Time Slot</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 4: TIME SLOT -->
+<div class="wizard-panel hidden rounded-2xl bg-warm-ivory-light p-6 sm:p-8 border border-luxury-gold/30 shadow-[0_6px_24px_rgba(11,59,46,0.04)]" id="step-4">
+<div class="flex items-center justify-between pb-4 border-b border-luxury-gold/20">
+<div>
+<span class="text-xs uppercase tracking-widest text-luxury-gold font-bold">Step 04 of 05</span>
+<h2 class="font-headline text-2xl sm:text-3xl text-luxury-forest font-semibold mt-0.5">Select Time Slot</h2>
+</div>
+<div class="w-12 h-12 rounded-full bg-soft-beige flex items-center justify-center text-luxury-forest border border-luxury-gold/40">
+<span class="material-symbols-outlined text-[26px]">schedule</span>
+</div>
+</div>
+<p class="text-xs sm:text-sm text-muted-greygreen my-5 leading-relaxed">
+                  Morning sessions correspond with heightened Kapha/Pitta clarity for comprehensive intake, while evening slots allow relaxed post-work review.
+                </p>
+<div class="space-y-6">
+<!-- Morning Slots -->
+<div class="p-5 rounded-2xl bg-soft-beige/40 border border-luxury-gold/20">
+<div class="flex items-center gap-2 mb-3 text-luxury-forest">
+<span class="material-symbols-outlined text-luxury-gold text-[20px]">wb_sunny</span>
+<span class="font-headline text-base sm:text-lg font-semibold">Morning Consultations</span>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<button class="time-slot-btn py-3 px-3 rounded-xl bg-warm-ivory border border-border-beige text-center text-xs sm:text-sm font-medium text-deep-charcoal hover:border-luxury-gold/60 transition-all" onclick="selectTimeSlot(this, '09:00 AM')" type="button">
+                        09:00 AM
+                      </button>
+<button class="time-slot-btn py-3 px-3 rounded-xl bg-luxury-forest border border-luxury-gold text-center text-xs sm:text-sm font-bold text-warm-ivory shadow-sm transition-all" onclick="selectTimeSlot(this, '10:00 AM')" type="button">
+                        10:00 AM
+                      </button>
+<button class="time-slot-btn py-3 px-3 rounded-xl bg-warm-ivory border border-border-beige text-center text-xs sm:text-sm font-medium text-deep-charcoal hover:border-luxury-gold/60 transition-all" onclick="selectTimeSlot(this, '11:00 AM')" type="button">
+                        11:00 AM
+                      </button>
+</div>
+</div>
+<!-- Evening Slots -->
+<div class="p-5 rounded-2xl bg-soft-beige/40 border border-luxury-gold/20">
+<div class="flex items-center gap-2 mb-3 text-luxury-forest">
+<span class="material-symbols-outlined text-luxury-emerald text-[20px]">nights_stay</span>
+<span class="font-headline text-base sm:text-lg font-semibold">Evening Consultations</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+<button class="time-slot-btn py-3 px-3 rounded-xl bg-warm-ivory border border-border-beige text-center text-xs sm:text-sm font-medium text-deep-charcoal hover:border-luxury-gold/60 transition-all" onclick="selectTimeSlot(this, '04:00 PM')" type="button">
+                        04:00 PM
+                      </button>
+<button class="time-slot-btn py-3 px-3 rounded-xl bg-warm-ivory border border-border-beige text-center text-xs sm:text-sm font-medium text-deep-charcoal hover:border-luxury-gold/60 transition-all" onclick="selectTimeSlot(this, '05:00 PM')" type="button">
+                        05:00 PM
+                      </button>
+<button class="time-slot-btn py-3 px-3 rounded-xl bg-warm-ivory border border-border-beige text-center text-xs sm:text-sm font-medium text-deep-charcoal hover:border-luxury-gold/60 transition-all" onclick="selectTimeSlot(this, '06:00 PM')" type="button">
+                        06:00 PM
+                      </button>
+<button class="time-slot-btn py-3 px-3 rounded-xl bg-warm-ivory border border-border-beige text-center text-xs sm:text-sm font-medium text-deep-charcoal hover:border-luxury-gold/60 transition-all" onclick="selectTimeSlot(this, '07:00 PM')" type="button">
+                        07:00 PM
+                      </button>
+</div>
+</div>
+</div>
+<div class="mt-8 flex items-center justify-between pt-4 border-t border-luxury-gold/20">
+<button class="px-5 py-2.5 rounded-full bg-soft-beige hover:bg-soft-beige-dark text-luxury-forest font-semibold text-sm transition-colors" onclick="goToStep(3)" type="button">
+                    ← Back
+                  </button>
+<button class="px-7 py-3 rounded-full bg-luxury-gold hover:bg-luxury-gold-dark text-luxury-forest font-bold text-sm tracking-wide flex items-center gap-2 shadow-[0_4px_16px_rgba(201,164,92,0.35)] transition-all" onclick="goToStep(5)" type="button">
+<span>Continue to Patient Details</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- STEP 5: PATIENT DETAILS -->
+<div class="wizard-panel hidden rounded-2xl bg-warm-ivory-light p-6 sm:p-8 border border-luxury-gold/30 shadow-[0_6px_24px_rgba(11,59,46,0.04)]" id="step-5">
+<div class="flex items-center justify-between pb-4 border-b border-luxury-gold/20">
+<div>
+<span class="text-xs uppercase tracking-widest text-luxury-gold font-bold">Step 05 of 05</span>
+<h2 class="font-headline text-2xl sm:text-3xl text-luxury-forest font-semibold mt-0.5">Patient Intake Details</h2>
+</div>
+<div class="w-12 h-12 rounded-full bg-soft-beige flex items-center justify-center text-luxury-forest border border-luxury-gold/40">
+<span class="material-symbols-outlined text-[26px]">badge</span>
+</div>
+</div>
+<p class="text-xs sm:text-sm text-muted-greygreen my-5 leading-relaxed">
+                  Enter your clinical contact parameters. Clicking "Request Appointment via WhatsApp" will format and transmit this intake directly to Dr. Aditya's verified clinic line.
+                </p>
+<form class="space-y-4" id="appointmentIntakeForm" onsubmit="dispatchWhatsAppAppointment(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="text-xs uppercase tracking-wider font-bold text-luxury-forest block">Full Name *</label>
+<input class="w-full px-4 py-2.5 rounded-xl bg-warm-ivory border border-border-beige text-deep-charcoal text-sm focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-luxury-gold shadow-inner" id="patientName" placeholder="e.g. Rajesh Sharma" required="" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs uppercase tracking-wider font-bold text-luxury-forest block">Indian Mobile Number *</label>
+<div class="flex items-center rounded-xl bg-warm-ivory border border-border-beige px-3 py-2.5 shadow-inner focus-within:ring-2 focus-within:ring-luxury-gold focus-within:border-luxury-gold">
+<span class="text-xs font-bold text-muted-greygreen mr-2">+91</span>
+<input class="w-full bg-transparent text-deep-charcoal text-sm focus:outline-none" id="patientPhone" pattern="[6-9][0-9]{9}" placeholder="9876543210" required="" type="tel"/>
+</div>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs uppercase tracking-wider font-bold text-luxury-forest block">Email Address (Optional)</label>
+<input class="w-full px-4 py-2.5 rounded-xl bg-warm-ivory border border-border-beige text-deep-charcoal text-sm focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-luxury-gold shadow-inner" id="patientEmail" placeholder="For encrypted digital prescription &amp; summary" type="email"/>
+</div>
+<div class="space-y-1.5">
+<label class="text-xs uppercase tracking-wider font-bold text-luxury-forest block">Brief Medical History or Chief Complaint</label>
+<textarea class="w-full px-4 py-2.5 rounded-xl bg-warm-ivory border border-border-beige text-deep-charcoal text-sm focus:outline-none focus:ring-2 focus:ring-luxury-gold focus:border-luxury-gold shadow-inner" id="patientNotes" placeholder="Duration of symptoms, previous treatments, known allergies, or specific questions for the doctor..." rows="3"></textarea>
+</div>
+<div class="pt-2">
+<label class="flex items-start gap-3 cursor-pointer">
+<input class="mt-1 w-4 h-4 rounded text-luxury-forest focus:ring-luxury-gold border-border-beige" id="patientConsent" required="" type="checkbox"/>
+<span class="text-xs text-muted-greygreen leading-relaxed">
+                        I agree to share the clinical details provided above for triage and scheduling with Dr. Aditya Ayurveda Clinic in accordance with holistic healthcare ethics.
+                      </span>
+</label>
+</div>
+<div class="mt-8 pt-4 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-luxury-gold/20">
+<button class="w-full sm:w-auto px-5 py-2.5 rounded-full bg-soft-beige hover:bg-soft-beige-dark text-luxury-forest font-semibold text-sm transition-colors" onclick="goToStep(4)" type="button">
+                      ← Back to Time
+                    </button>
+<button class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-luxury-gold hover:bg-luxury-gold-dark text-luxury-forest font-bold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-[0_6px_20px_rgba(201,164,92,0.4)] transition-all hover:scale-[1.02]" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Request Appointment via WhatsApp</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+<!-- Right Sidebar: Live Dossier (Consultation Summary) -->
+<div class="lg:col-span-4 sticky top-36 flex flex-col gap-6">
+<!-- Dossier Card -->
+<div class="rounded-2xl bg-warm-ivory-light p-6 border-2 border-luxury-gold/40 shadow-[0_8px_30px_rgba(11,59,46,0.06)] relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-28 h-28 bg-luxury-gold/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center gap-3 pb-4 border-b border-luxury-gold/20">
+<div class="w-10 h-10 rounded-full bg-luxury-forest text-luxury-gold flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[20px]">clinical_notes</span>
+</div>
+<div>
+<p class="text-[10px] uppercase tracking-widest text-luxury-gold-dark font-bold">Live Dossier</p>
+<h3 class="font-headline text-lg sm:text-xl text-luxury-forest font-bold">Consultation Summary</h3>
+</div>
+</div>
+<div class="space-y-3 pt-4">
+<!-- Doctor -->
+<div class="p-3.5 rounded-xl bg-warm-ivory border border-luxury-gold/25">
+<span class="text-[10px] uppercase tracking-wider font-bold text-muted-greygreen block">Attending Physician</span>
+<p class="text-sm font-bold text-luxury-forest mt-0.5">Dr. Aditya Navnath Shinde</p>
+<p class="text-xs text-muted-greygreen">Reg. BAMS | Classical Ayurvedic Physician</p>
+</div>
+<!-- Modality -->
+<div class="p-3.5 rounded-xl bg-warm-ivory border border-luxury-gold/25">
+<div class="flex items-center justify-between">
+<span class="text-[10px] uppercase tracking-wider font-bold text-muted-greygreen">Selected Modality</span>
+<button class="text-xs text-luxury-gold-dark hover:underline font-bold" onclick="goToStep(1)" type="button">Edit</button>
+</div>
+<p class="text-sm font-bold text-luxury-forest mt-0.5" id="summaryService">Online Ayurveda Consultation</p>
+<div class="flex items-center gap-3 mt-1.5 text-xs text-muted-greygreen">
+<span class="flex items-center gap-1 font-semibold" id="summaryDuration">
+<span class="material-symbols-outlined text-[15px] text-luxury-emerald">timer</span> 45 Mins
+                      </span>
+<span>•</span>
+<span class="font-bold text-luxury-forest bg-luxury-gold/20 px-2 py-0.5 rounded text-xs" id="summaryFee">₹900</span>
+</div>
+</div>
+<!-- Concern -->
+<div class="p-3.5 rounded-xl bg-warm-ivory border border-luxury-gold/25">
+<div class="flex items-center justify-between">
+<span class="text-[10px] uppercase tracking-wider font-bold text-muted-greygreen">Discussion Topic</span>
+<button class="text-xs text-luxury-gold-dark hover:underline font-bold" onclick="goToStep(2)" type="button">Edit</button>
+</div>
+<p class="text-xs sm:text-sm font-medium text-luxury-forest mt-0.5 line-clamp-2" id="summaryReason">Acidity &amp; Digestive</p>
+</div>
+<!-- Date & Time Grid -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="p-3 rounded-xl bg-warm-ivory border border-luxury-gold/25">
+<div class="flex items-center justify-between">
+<span class="text-[10px] uppercase tracking-wider font-bold text-muted-greygreen">Date</span>
+<button class="text-[11px] text-luxury-gold-dark hover:underline font-bold" onclick="goToStep(3)" type="button">Edit</button>
+</div>
+<p class="text-xs sm:text-sm font-bold text-luxury-forest mt-1" id="summaryDate">Oct 24, 2025</p>
+</div>
+<div class="p-3 rounded-xl bg-warm-ivory border border-luxury-gold/25">
+<div class="flex items-center justify-between">
+<span class="text-[10px] uppercase tracking-wider font-bold text-muted-greygreen">Time Slot</span>
+<button class="text-[11px] text-luxury-gold-dark hover:underline font-bold" onclick="goToStep(4)" type="button">Edit</button>
+</div>
+<p class="text-xs sm:text-sm font-bold text-luxury-forest mt-1" id="summaryTime">10:00 AM</p>
+</div>
+</div>
+</div>
+<!-- Advisory Notice -->
+<div class="mt-4 p-3 rounded-xl bg-soft-beige/70 border border-luxury-gold/30">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-luxury-emerald text-[18px] shrink-0 mt-0.5">info</span>
+<p class="text-xs text-muted-greygreen leading-relaxed">
+                      No advance payment needed to request. Clinic assistant confirms final video link and coordination via WhatsApp.
+                    </p>
+</div>
+</div>
+</div>
+<!-- Quick Doctor Assistance Card -->
+<div class="p-5 rounded-2xl bg-soft-beige/60 border border-luxury-gold/25 shadow-sm flex items-center gap-4">
+<img class="w-13 h-13 rounded-full object-cover shrink-0 ring-2 ring-luxury-gold/40" data-alt="Portrait of Dr. Aditya Navnath Shinde" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3Tk0nKNaqBEIrbKz0cykW79o9rdXPAoMtUKl4VG6aBn0ZQNZtAMYXASgAIAd9KkLwc4Yt7FmFUO69Nh0Cur7I2iWl06k8hJqQwMDQiHp1wGj_HJxs4vL_dqIgDzhrzCFDoYAh0oZr5fuFBAsnp7AwevuI5hp0mR0hwlFu5curja8_oEwBV8wli4wsU7xOsZyTgiOgMbOKNqxcCQ87MCHKQedai3wNEaPU1BA2Exec-gyR5jMqDzl4gQ" style="width: 52px; height: 52px;"/>
+<div>
+<p class="text-sm font-bold text-luxury-forest">Direct Clinic Inquiries?</p>
+<p class="text-xs text-muted-greygreen">Speak with clinic desk directly</p>
+<a class="text-xs text-luxury-emerald font-bold hover:text-luxury-forest hover:underline mt-1 inline-flex items-center gap-1" href="tel:+919657969379">
+<span class="material-symbols-outlined text-[14px]">call</span>
+                    +91 96579 69379
+                  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Post-Booking Assurance Section (Styled in Deep Forest Green #0B3B2E) -->
+<div class="mt-20 rounded-3xl bg-luxury-forest text-warm-ivory p-8 sm:p-12 shadow-xl border border-luxury-gold/30 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-luxury-emerald/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-2xl mx-auto text-center mb-10 relative z-10">
+<span class="text-xs uppercase tracking-widest text-luxury-gold font-bold">Post-Booking Assurance</span>
+<h2 class="font-headline text-2xl sm:text-3xl lg:text-4xl text-warm-ivory font-normal mt-2">What Happens After You Request?</h2>
+<p class="text-xs sm:text-sm text-soft-beige/80 mt-2.5 leading-relaxed">
+                Every clinical intake is reviewed with medical precision, classical Nadi considerations, and mindful personal attention.
+              </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
+<!-- Card 1 -->
+<div class="p-6 sm:p-7 rounded-2xl bg-luxury-forest-dark/70 border border-luxury-gold/25 shadow-lg flex flex-col justify-between hover:border-luxury-gold/60 transition-all">
+<div>
+<div class="w-10 h-10 rounded-full bg-luxury-emerald/40 text-luxury-gold border border-luxury-gold/30 flex items-center justify-center font-headline text-base font-bold mb-4">
+                    01
+                  </div>
+<h3 class="font-headline text-lg text-warm-ivory font-semibold mb-2">Verification &amp; Triage</h3>
+<p class="text-xs sm:text-sm text-soft-beige/75 leading-relaxed">
+                    Dr. Aditya evaluates your listed concern, medical background, and schedule suitability within 15-30 minutes during active clinic hours.
+                  </p>
+</div>
+<div class="mt-5 pt-3.5 border-t border-luxury-gold/20 flex items-center gap-2 text-luxury-gold text-xs font-semibold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Intake Analysis</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-6 sm:p-7 rounded-2xl bg-luxury-forest-dark/70 border border-luxury-gold/25 shadow-lg flex flex-col justify-between hover:border-luxury-gold/60 transition-all">
+<div>
+<div class="w-10 h-10 rounded-full bg-luxury-emerald/40 text-luxury-gold border border-luxury-gold/30 flex items-center justify-center font-headline text-base font-bold mb-4">
+                    02
+                  </div>
+<h3 class="font-headline text-lg text-warm-ivory font-semibold mb-2">Consultation Link Dispatch</h3>
+<p class="text-xs sm:text-sm text-soft-beige/75 leading-relaxed">
+                    You receive an encrypted Google Meet / WhatsApp Video link along with pre-consultation diet reminders and tongue diagnosis guidance.
+                  </p>
+</div>
+<div class="mt-5 pt-3.5 border-t border-luxury-gold/20 flex items-center gap-2 text-luxury-gold text-xs font-semibold">
+<span class="material-symbols-outlined text-[16px]">link</span>
+<span>Secure Video Room</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-6 sm:p-7 rounded-2xl bg-luxury-forest-dark/70 border border-luxury-gold/25 shadow-lg flex flex-col justify-between hover:border-luxury-gold/60 transition-all">
+<div>
+<div class="w-10 h-10 rounded-full bg-luxury-emerald/40 text-luxury-gold border border-luxury-gold/30 flex items-center justify-center font-headline text-base font-bold mb-4">
+                    03
+                  </div>
+<h3 class="font-headline text-lg text-warm-ivory font-semibold mb-2">Tailored Treatment Regimen</h3>
+<p class="text-xs sm:text-sm text-soft-beige/75 leading-relaxed">
+                    Following your session, receive a digitally signed Ayurvedic prescription detailing botanical formulations, lifestyle corrections, and herbal dosages.
+                  </p>
+</div>
+<div class="mt-5 pt-3.5 border-t border-luxury-gold/20 flex items-center gap-2 text-luxury-gold text-xs font-semibold">
+<span class="material-symbols-outlined text-[16px]">prescriptions</span>
+<span>Signed Medical Chart</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Wizard Javascript Logic -->
+<script>
+      let appointmentState = {
+        step: 1,
+        service: 'Online Ayurveda Consultation',
+        duration: '45 Mins',
+        fee: '₹900',
+        concerns: ['Acidity & Digestive'],
+        date: '2025-10-24',
+        dateFormatted: 'Oct 24, 2025',
+        time: '10:00 AM'
+      };
+
+      const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+      let calMonth = 9; // October (0-indexed)
+      let calYear = 2025;
+
+      function initCalendar() {
+        renderCalendar(calMonth, calYear);
+      }
+
+      function changeMonth(offset) {
+        calMonth += offset;
+        if (calMonth < 0) {
+          calMonth = 11;
+          calYear--;
+        } else if (calMonth > 11) {
+          calMonth = 0;
+          calYear++;
+        }
+        renderCalendar(calMonth, calYear);
+      }
+
+      function renderCalendar(month, year) {
+        const title = document.getElementById('calendarMonthTitle');
+        if (title) title.innerText = months[month] + " " + year;
+        const grid = document.getElementById('calendarDaysGrid');
+        if (!grid) return;
+        grid.innerHTML = '';
+
+        const firstDay = new Date(year, month, 1).getDay();
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+        for (let i = 0; i < firstDay; i++) {
+          const emptyCell = document.createElement('div');
+          emptyCell.className = 'h-10';
+          grid.appendChild(emptyCell);
+        }
+
+        for (let d = 1; d <= daysInMonth; d++) {
+          const dayBtn = document.createElement('button');
+          dayBtn.type = 'button';
+          const dStr = (d < 10 ? '0' : '') + d;
+          const mStr = ((month + 1) < 10 ? '0' : '') + (month + 1);
+          const isoDate = `${year}-${mStr}-${dStr}`;
+
+          dayBtn.className = 'cal-day h-10 rounded-xl flex items-center justify-center text-xs sm:text-sm font-semibold transition-all ';
+          if (isoDate === appointmentState.date) {
+            dayBtn.className += 'bg-luxury-gold text-luxury-forest font-bold ring-2 ring-luxury-forest shadow-md scale-105';
+          } else {
+            dayBtn.className += 'bg-warm-ivory text-deep-charcoal border border-border-beige hover:border-luxury-gold hover:bg-soft-beige';
+          }
+
+          dayBtn.innerText = d;
+          dayBtn.onclick = function() {
+            appointmentState.date = isoDate;
+            appointmentState.dateFormatted = months[month].substring(0,3) + ' ' + d + ', ' + year;
+            updateSummary();
+            renderCalendar(month, year);
+          };
+          grid.appendChild(dayBtn);
+        }
+      }
+
+      function toggleServiceCard(el, serviceName, duration, fee) {
+        document.querySelectorAll('.service-card').forEach(card => {
+          card.classList.remove('border-2', 'border-luxury-forest', 'ring-1', 'ring-luxury-gold/60', 'shadow-md');
+          card.classList.add('border', 'border-border-beige');
+          const details = card.querySelector('.service-details');
+          const chevron = card.querySelector('.expand-icon');
+          const badge = card.querySelector('.service-details span:last-child');
+          if (details) details.classList.add('hidden');
+          if (chevron) {
+            chevron.classList.remove('rotate-180', 'text-luxury-forest');
+            chevron.classList.add('text-muted-greygreen');
+          }
+          if (badge) {
+            badge.className = 'px-2.5 py-1 rounded-full bg-soft-beige text-luxury-forest text-xs font-semibold';
+            badge.innerText = 'Select';
+          }
+        });
+
+        el.classList.remove('border', 'border-border-beige');
+        el.classList.add('border-2', 'border-luxury-forest', 'ring-1', 'ring-luxury-gold/60', 'shadow-md');
+        const details = el.querySelector('.service-details');
+        const chevron = el.querySelector('.expand-icon');
+        const badge = el.querySelector('.service-details span:last-child');
+        if (details) details.classList.remove('hidden');
+        if (chevron) {
+          chevron.classList.add('rotate-180', 'text-luxury-forest');
+          chevron.classList.remove('text-muted-greygreen');
+        }
+        if (badge) {
+          badge.className = 'px-2.5 py-1 rounded-full bg-luxury-forest text-warm-ivory text-xs font-semibold';
+          badge.innerText = 'Selected';
+        }
+
+        appointmentState.service = serviceName;
+        appointmentState.duration = duration;
+        appointmentState.fee = fee;
+        updateSummary();
+      }
+
+      function toggleConcern(btn, name) {
+        const idx = appointmentState.concerns.indexOf(name);
+        if (idx > -1) {
+          if (appointmentState.concerns.length > 1) {
+            appointmentState.concerns.splice(idx, 1);
+            btn.className = 'concern-chip px-4 py-2 rounded-full bg-soft-beige text-deep-charcoal border border-border-beige text-xs sm:text-sm font-medium transition-all hover:border-luxury-gold/50 flex items-center gap-2';
+          }
+        } else {
+          appointmentState.concerns.push(name);
+          btn.className = 'concern-chip px-4 py-2 rounded-full bg-luxury-forest text-warm-ivory border border-luxury-gold text-xs sm:text-sm font-semibold transition-all shadow-sm flex items-center gap-2';
+        }
+        updateSummary();
+      }
+
+      function selectTimeSlot(btn, slot) {
+        document.querySelectorAll('.time-slot-btn').forEach(b => {
+          b.className = 'time-slot-btn py-3 px-3 rounded-xl bg-warm-ivory border border-border-beige text-center text-xs sm:text-sm font-medium text-deep-charcoal hover:border-luxury-gold/60 transition-all';
+        });
+        btn.className = 'time-slot-btn py-3 px-3 rounded-xl bg-luxury-forest border border-luxury-gold text-center text-xs sm:text-sm font-bold text-warm-ivory shadow-sm transition-all';
+        appointmentState.time = slot;
+        updateSummary();
+      }
+
+      function goToStep(stepNum) {
+        appointmentState.step = stepNum;
+        for (let i = 1; i <= 5; i++) {
+          const panel = document.getElementById('step-' + i);
+          const tab = document.getElementById('stepTab-' + i);
+          const line = document.getElementById('stepLine-' + (i - 1));
+
+          if (panel) {
+            if (i === stepNum) {
+              panel.classList.remove('hidden');
+            } else {
+              panel.classList.add('hidden');
+            }
+          }
+
+          if (tab) {
+            const badge = tab.querySelector('span:first-child');
+            if (i === stepNum) {
+              // Active Step: Deep Forest Green (#0B3B2E) background with Champagne Gold (#C9A45C) ring/accent
+              tab.className = 'step-nav-btn flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-luxury-forest text-warm-ivory ring-2 ring-luxury-gold shadow-md text-left transition-all flex-shrink-0 cursor-pointer';
+              if (badge) {
+                badge.className = 'w-6 h-6 rounded-full bg-luxury-gold text-luxury-forest text-xs flex items-center justify-center font-bold';
+                badge.innerHTML = (i < 10 ? '0' : '') + i;
+              }
+            } else if (i < stepNum) {
+              // Completed Step: Rich Emerald (#145C48) with Champagne Gold checkmark
+              tab.className = 'step-nav-btn flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-luxury-emerald text-warm-ivory text-left transition-all flex-shrink-0 cursor-pointer border border-luxury-gold/40 shadow-sm';
+              if (badge) {
+                badge.className = 'w-6 h-6 rounded-full bg-luxury-forest text-luxury-gold text-xs flex items-center justify-center font-bold';
+                badge.innerHTML = '<span class="material-symbols-outlined text-[14px]">check</span>';
+              }
+            } else {
+              // Inactive Step: Soft Beige (#EDE5D5) with dark grey-green text
+              tab.className = 'step-nav-btn flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-soft-beige text-muted-greygreen hover:text-luxury-forest text-left transition-all flex-shrink-0 border border-transparent cursor-pointer';
+              if (badge) {
+                badge.className = 'w-6 h-6 rounded-full bg-soft-beige-dark text-muted-greygreen text-xs flex items-center justify-center font-bold';
+                badge.innerHTML = (i < 10 ? '0' : '') + i;
+              }
+            }
+          }
+        }
+      }
+
+      function updateSummary() {
+        const sService = document.getElementById('summaryService');
+        const sDuration = document.getElementById('summaryDuration');
+        const sFee = document.getElementById('summaryFee');
+        const sReason = document.getElementById('summaryReason');
+        const sDate = document.getElementById('summaryDate');
+        const sTime = document.getElementById('summaryTime');
+
+        if (sService) sService.innerText = appointmentState.service;
+        if (sDuration) sDuration.innerHTML = '<span class="material-symbols-outlined text-[15px] text-luxury-emerald">timer</span> ' + appointmentState.duration;
+        if (sFee) sFee.innerText = appointmentState.fee;
+        if (sReason) sReason.innerText = appointmentState.concerns.join(', ');
+        if (sDate) sDate.innerText = appointmentState.dateFormatted;
+        if (sTime) sTime.innerText = appointmentState.time;
+      }
+
+      function dispatchWhatsAppAppointment(e) {
+        e.preventDefault();
+        const name = document.getElementById('patientName').value.trim();
+        const phone = document.getElementById('patientPhone').value.trim();
+        const email = document.getElementById('patientEmail').value.trim();
+        const notes = document.getElementById('patientNotes').value.trim();
+
+        const text = 
+          `*Clinical Consultation Request - Dr. Aditya Ayurveda Clinic*\n\n` +
+          `*Patient Name:* ${name}\n` +
+          `*Phone Number:* +91 ${phone}\n` +
+          (email ? `*Email:* ${email}\n` : '') +
+          `*Modality:* ${appointmentState.service} (${appointmentState.duration})\n` +
+          `*Primary Area / Concerns:* ${appointmentState.concerns.join(', ')}\n` +
+          `*Requested Date:* ${appointmentState.dateFormatted}\n` +
+          `*Preferred Slot:* ${appointmentState.time}\n` +
+          (notes ? `*Medical Notes:* ${notes}\n\n` : '\n') +
+          `_Submitted via Guided Intake Portal. Please confirm clinical room availability._`;
+
+        const encoded = encodeURIComponent(text);
+        const whatsappUrl = `https://wa.me/919657969379?text=${encoded}`;
+        window.open(whatsappUrl, '_blank');
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        initCalendar();
+        updateSummary();
+      });
+    </script>
+</main>
+<!-- Sticky Quick Action Buttons -->
+<div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+<a aria-label="Chat on WhatsApp" class="w-12 h-12 rounded-full bg-luxury-forest text-luxury-gold flex items-center justify-center shadow-[0_6px_22px_rgba(11,59,46,0.35)] hover:scale-110 transition-transform ring-2 ring-luxury-gold/50" href="https://wa.me/919657969379" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+</a>
+<a aria-label="Direct Call" class="w-12 h-12 rounded-full bg-warm-ivory text-luxury-forest flex items-center justify-center shadow-[0_6px_20px_rgba(11,59,46,0.2)] hover:scale-110 transition-transform ring-1 ring-luxury-gold/50" href="tel:+919657969379">
+<span class="material-symbols-outlined text-[24px]">call</span>
+</a>
+</div>
+<!-- Footer (Deep Forest Green #0B3B2E) -->
+<footer class="w-full bg-luxury-forest text-warm-ivory border-t border-luxury-gold/30 pt-16 pb-12 mt-16">
+<div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 lg:gap-12 pb-12 border-b border-luxury-gold/20">
+<div class="md:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<img alt="Dr. Aditya Ayurveda Emblem" class="h-8 w-auto object-contain brightness-110" src="https://lh3.googleusercontent.com/aida/AEtjO1W8gictkYE2ML89ZvZXWRRGCrzNRY_gHumv0OFT_MN8Caq8FjJrtRor1PQ3T4Yohn1xO0ZYI_Nt_s29FHoPom__qUgS7l16M3SXIZJOqQri1dqTUy2tlLau6gGjlYD-0ah3DUngmPNpzfiwvcfFIxPh3Tpb9XaVdW-7tPs11H543JAJH6P_Hh6luFH2wek48UAiO0zfD0H7obTLDozJYGaOsD2kYOJTeBsagJw_ZMXEojjIy7ueAViDWhrg"/>
+<span class="font-headline text-xl text-warm-ivory font-bold tracking-tight">Dr. Aditya Ayurveda Clinic</span>
+</div>
+<p class="text-sm text-soft-beige/80 max-w-lg leading-relaxed">
+            An integrative Ayurvedic sanctuary uniting classical pulse diagnosis (Nadi Pariksha), Panchakarma protocols, and modern nutritional evidence for restorative vitality.
+          </p>
+<div class="pt-2">
+<span class="inline-block px-3.5 py-1.5 rounded-full bg-luxury-emerald/40 border border-luxury-gold/40 text-luxury-gold text-xs uppercase tracking-wider font-semibold">
+              Reg. Medical Practitioner | BAMS (MUHS)
+            </span>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-base sm:text-lg text-luxury-gold font-bold tracking-wide">Sanctuary Pages</h4>
+<ul class="space-y-2 text-xs sm:text-sm text-soft-beige/80">
+<li><a class="hover:text-luxury-gold transition-colors" data-path="home" href="index.html">Home Overview</a></li>
+<li><a class="hover:text-luxury-gold transition-colors" data-path="services" href="services.html">Clinical Treatments &amp; Panchakarma</a></li>
+<li><a class="hover:text-luxury-gold transition-colors" data-path="about-doctor" href="about.html">Doctor Credentials &amp; Philosophy</a></li>
+<li><a class="hover:text-luxury-gold transition-colors" data-path="appointment-booking" href="appointment.html">Schedule Consultation</a></li>
+<li><a class="hover:text-luxury-gold transition-colors" data-path="contact-&amp;-directions" href="contact.html">Clinic Directions &amp; Inquiries</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-base sm:text-lg text-luxury-gold font-bold tracking-wide">Clinic Location</h4>
+<p class="text-xs sm:text-sm text-soft-beige/80 leading-relaxed">
+            Sector 20, Kharghar, Navi Mumbai,<br/>Maharashtra, 410210, India
+          </p>
+<div class="space-y-1.5 text-xs sm:text-sm">
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-luxury-gold">call</span>
+<a class="text-warm-ivory hover:text-luxury-gold transition-colors" href="tel:+919657969379">+91 96579 69379</a>
+</p>
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-luxury-gold">mail</span>
+<a class="text-warm-ivory hover:text-luxury-gold transition-colors" href="mailto:consult@dradityaayurveda.com">consult@dradityaayurveda.com</a>
+</p>
+</div>
+<p class="text-xs text-luxury-gold/90 uppercase tracking-widest font-semibold pt-1">Mon – Sat: 10:00 AM – 8:00 PM</p>
+</div>
+</div>
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-soft-beige/65">
+<p class="text-center sm:text-left">© 2025 Dr. Aditya Ayurveda Clinic. All Rights Reserved. Ethical Ayurvedic Healthcare.</p>
+<p class="text-center sm:text-right max-w-md text-[11px] leading-relaxed">
+          Medical Disclaimer: Diagnostic regimens, rasayanas, and clinical consultations are customized based on Prakriti and Dosha evaluation. Never discontinue ongoing pharmaceutical therapies without physician consultation.
+        </p>
+</div>
+</div>
+</footer>
+</body></html>

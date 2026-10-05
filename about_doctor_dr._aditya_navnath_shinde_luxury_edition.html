@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="web_standard" name="shell-type"/>
+<title>Dr. Aditya Navnath Shinde | Ayurvedic Physician &amp; Clinical Sanctuary</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "luxury-primary": "#0B3B2E",
+            "luxury-secondary": "#145C48",
+            "luxury-accent": "#C9A45C",
+            "luxury-accent-hover": "#b8934a",
+            "luxury-accent-light": "#F3EAD8",
+            "luxury-bg": "#F7F3EA",
+            "luxury-beige": "#EDE5D5",
+            "luxury-charcoal": "#202723",
+            "luxury-muted": "#4A5A52",
+            "luxury-surface-card": "#FFFFFF",
+            "luxury-border-gold": "#E2D3B3",
+            "luxury-border-gold-strong": "#C9A45C"
+          },
+          fontFamily: {
+            "headline": ["Playfair Display", "serif"],
+            "body": ["Plus Jakarta Sans", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "2xl": "1rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter-sm": "1rem",
+            "gutter": "1.5rem",
+            "gutter-lg": "2.5rem",
+            "space-xl": "3rem"
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-luxury-bg font-body text-luxury-charcoal antialiased selection:bg-luxury-accent/30 selection:text-luxury-primary">
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#F7F3EA]/95 backdrop-blur-md border-b border-luxury-border-gold shadow-[0_4px_24px_rgba(11,59,46,0.06)]">
+<div class="h-28 w-full max-w-[1360px] mx-auto px-gutter-sm lg:px-gutter-lg flex flex-col justify-between py-2.5">
+<div class="flex items-center justify-between gap-3 h-14">
+<a class="flex items-center gap-3 min-w-0 group" href="index.html">
+<img alt="Dr. Aditya Ayurveda Emblem" class="h-9 sm:h-11 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1W8gictkYE2ML89ZvZXWRRGCrzNRY_gHumv0OFT_MN8Caq8FjJrtRor1PQ3T4Yohn1xO0ZYI_Nt_s29FHoPom__qUgS7l16M3SXIZJOqQri1dqTUy2tlLau6gGjlYD-0ah3DUngmPNpzfiwvcfFIxPh3Tpb9XaVdW-7tPs11H543JAJH6P_Hh6luFH2wek48UAiO0zfD0H7obTLDozJYGaOsD2kYOJTeBsagJw_ZMXEojjIy7ueAViDWhrg"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline text-lg sm:text-xl text-luxury-primary leading-tight tracking-tight truncate font-semibold">Dr. Aditya Ayurveda Clinic</span>
+<span class="text-[11px] sm:text-xs tracking-wider uppercase text-luxury-accent font-bold truncate">BAMS | Integrative &amp; Classical Consultation</span>
+</div>
+</a>
+<div class="flex items-center gap-2.5 sm:gap-4 flex-shrink-0">
+<a class="inline-flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2 rounded-full bg-luxury-accent hover:bg-luxury-accent-hover text-luxury-primary font-semibold text-xs sm:text-sm tracking-wide transition-all shadow-[0_2px_10px_rgba(201,164,92,0.3)] hover:shadow-lg" data-path="appointment-booking" href="appointment.html">
+<span class="whitespace-nowrap">Book Consultation</span>
+</a>
+<div class="p-0.5 rounded-full ring-2 ring-luxury-accent/60">
+<img alt="Dr. Aditya" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATjYCISmdTiqfOnmNMGBYBKkTnBRdSzhvfBJLOmKf27DX-kmhS6N1rELdpOFH0d-F9CxA_-s6JytHXmjR3Im5zUtJFcskppTIGXgl9X5gYoekhsUstmoXp_QRIOy5CHbr-jWzXkB2VP1HuQ7OnpPeTcQneKyKWcGWkuC3gF5EW54CtXBbpwziSdtSwnRgH6Ic5kSIb0WUUocA9F-8EHUSJ6oxT-0fCAOlsfsOPpoqlzbka44Vdf-dQxJ1SfvC3-ZnFxT8"/>
+</div>
+</div>
+</div>
+<nav class="flex items-center justify-between sm:justify-start gap-1 sm:gap-6 border-t border-luxury-border-gold/60 pt-1.5 overflow-x-hidden" data-active-classes="bg-luxury-primary text-luxury-bg font-bold">
+<a class="px-2.5 sm:px-3 py-1 rounded-full text-luxury-muted hover:text-luxury-primary hover:bg-luxury-beige transition-colors text-xs sm:text-sm font-medium" data-path="home" href="index.html">Home</a>
+<a class="px-2.5 sm:px-3 py-1 rounded-full text-luxury-muted hover:text-luxury-primary hover:bg-luxury-beige transition-colors text-xs sm:text-sm font-medium" data-path="services" href="services.html">Services</a>
+<a aria-current="page" class="px-3.5 py-1 rounded-full bg-luxury-primary text-[#F7F3EA] shadow-sm text-xs sm:text-sm font-bold border border-luxury-accent/30" data-path="about-doctor" href="about.html">About Doctor</a>
+<a class="px-2.5 sm:px-3 py-1 rounded-full text-luxury-muted hover:text-luxury-primary hover:bg-luxury-beige transition-colors text-xs sm:text-sm font-medium" data-path="appointment-booking" href="appointment.html">Appointment</a>
+<a class="px-2.5 sm:px-3 py-1 rounded-full text-luxury-muted hover:text-luxury-primary hover:bg-luxury-beige transition-colors text-xs sm:text-sm font-medium" data-path="contact-&amp;-directions" href="contact.html">Contact</a>
+<a class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-luxury-primary hover:text-luxury-secondary hover:bg-luxury-accent/20 transition-colors text-xs sm:text-sm font-semibold ml-auto border border-luxury-border-gold" href="https://wa.me/919657969379" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-luxury-accent">chat</span>
+<span>WhatsApp Consult</span>
+</a>
+</nav>
+</div>
+</header>
+<!-- Main Content -->
+<main class="w-full pt-28 bg-luxury-bg min-h-[calc(100vh-16rem)]">
+<div class="flex flex-col w-full">
+<div class="w-full max-w-[1360px] mx-auto px-gutter-sm lg:px-gutter-lg pb-space-xl">
+<!-- Hero Profile Section -->
+<div class="pt-8 sm:pt-12 pb-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Doctor Portrait with Champagne Gold Border -->
+<div class="lg:col-span-5 relative">
+<div class="relative p-2 rounded-2xl bg-luxury-beige border border-luxury-accent shadow-[0_16px_40px_rgba(11,59,46,0.12)] max-w-[460px] mx-auto lg:mx-0">
+<div class="relative rounded-xl overflow-hidden aspect-[0.85/1] bg-luxury-primary/10">
+<img alt="Dr. Aditya Navnath Shinde portrait" class="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZ3V4yw2jVBWFbTxVYfwyrOaftWjWtUOjE-MfwCq4_9X8mSXUJrBahgVtloXGOzgt2kjPp28IovlX12YFZeDeb2zpZe9snyLxJSA_uEUD-bRDnLOl-xdJC6dam5Hkv_g_k8HzHFfX78a04YBR1gOmIdV5fGYwXladmAGkJ_3zi5Z8XFGmhTYsz68zBCEZ5xsipR95IQlhBFRWXnFIqPmXK16f-z-PhDkH6jGFG-8Q7OgMarnrtUgTk3M_s8Dty2b3qJvU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-luxury-primary/80 via-transparent to-transparent opacity-50"></div>
+</div>
+</div>
+<!-- Credential Overlay Card -->
+<div class="absolute -bottom-5 left-4 right-4 sm:left-6 sm:right-auto bg-[#FFFFFF]/95 backdrop-blur-md rounded-xl p-4 shadow-[0_8px_24px_rgba(11,59,46,0.12)] border border-luxury-border-gold max-w-sm">
+<div class="flex items-center gap-3.5">
+<div class="w-11 h-11 rounded-full bg-luxury-primary flex items-center justify-center flex-shrink-0 text-luxury-accent border border-luxury-accent/50 shadow-inner">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="min-w-0">
+<span class="block text-xs uppercase tracking-wider text-luxury-accent font-bold">Maharashtra Council of Indian Medicine</span>
+<span class="block text-sm font-semibold text-luxury-primary truncate">BAMS Qualified | Reg. Practitioner</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Doctor Intro Typography -->
+<div class="lg:col-span-7 flex flex-col justify-center space-y-6 pt-10 lg:pt-0">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-luxury-beige border border-luxury-border-gold text-luxury-primary">
+<span class="w-2 h-2 rounded-full bg-luxury-accent"></span>
+<span class="text-xs uppercase tracking-widest font-semibold">Ayurvedacharya &amp; Clinical Guide — Navi Mumbai, India</span>
+</div>
+<h1 class="font-headline text-3xl sm:text-4xl lg:text-5xl text-luxury-primary font-medium tracking-tight">
+                  Dr. Aditya Navnath Shinde
+                </h1>
+<p class="text-base sm:text-lg text-luxury-accent font-semibold flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">medical_services</span>
+                  BAMS (Bachelor of Ayurvedic Medicine &amp; Surgery), MUHS
+                </p>
+</div>
+<!-- Quote -->
+<div class="relative pl-6 py-1">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-luxury-accent rounded-full"></div>
+<blockquote class="font-headline text-xl sm:text-2xl italic text-luxury-primary font-normal leading-snug">
+                  “Personalized Ayurveda Guidance with a Patient-Centred Approach.”
+                </blockquote>
+</div>
+<p class="text-base sm:text-lg text-luxury-muted leading-relaxed">
+                Rooted in transparent, ethical diagnostics, Dr. Aditya offers deliberate and unhurried consultations. Eschewing exaggerated claims and mass-market remedies, his practice centers on decoding your innate constitution (<em class="text-luxury-primary not-italic font-semibold">Prakriti</em>), realigning current metabolic imbalances (<em class="text-luxury-primary not-italic font-semibold">Vikriti</em>), and charting achievable daily diet and herb protocols tailored to modern urban life.
+              </p>
+<!-- Badges -->
+<div class="flex flex-wrap gap-2.5 pt-1">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-luxury-beige text-luxury-primary border border-luxury-border-gold shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-luxury-accent" style="font-variation-settings: 'FILL' 1;">nature_people</span>
+<span class="text-xs sm:text-sm font-semibold">Prakriti Assessment</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-luxury-beige text-luxury-primary border border-luxury-border-gold shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-luxury-accent" style="font-variation-settings: 'FILL' 1;">hourglass_top</span>
+<span class="text-xs sm:text-sm font-semibold">Unhurried Care (30+ Min)</span>
+</div>
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-luxury-beige text-luxury-primary border border-luxury-border-gold shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-luxury-accent" style="font-variation-settings: 'FILL' 1;">video_camera_front</span>
+<span class="text-xs sm:text-sm font-semibold">Virtual &amp; In-Clinic Consults</span>
+</div>
+</div>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-3">
+<a class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-luxury-accent hover:bg-luxury-accent-hover text-luxury-primary font-bold text-sm sm:text-base tracking-wide transition-all shadow-[0_4px_16px_rgba(201,164,92,0.35)] hover:shadow-xl hover:-translate-y-0.5" data-path="appointment-booking" href="appointment.html">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+<span>Request an Appointment</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-luxury-beige text-luxury-primary border-2 border-luxury-accent font-semibold text-sm sm:text-base transition-all shadow-sm hover:-translate-y-0.5" href="https://wa.me/919657969379" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-luxury-accent">chat</span>
+<span>WhatsApp Desk</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Metric / Credential Badges in Soft Beige -->
+<div class="my-space-xl">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 sm:p-8 bg-luxury-beige rounded-2xl border border-luxury-border-gold shadow-sm">
+<div class="flex flex-col space-y-1.5 border-b md:border-b-0 md:border-r border-luxury-border-gold pb-4 md:pb-0 md:pr-4">
+<span class="text-xs uppercase tracking-wider text-luxury-muted font-bold">Clinical Qualification</span>
+<span class="font-headline text-xl sm:text-2xl text-luxury-primary font-semibold">BAMS (MUHS)</span>
+<span class="text-xs sm:text-sm text-luxury-muted">Formal 5.5-Year Degree</span>
+</div>
+<div class="flex flex-col space-y-1.5 border-b md:border-b-0 md:border-r border-luxury-border-gold pb-4 md:pb-0 md:pr-4">
+<span class="text-xs uppercase tracking-wider text-luxury-muted font-bold">Diagnostic Core</span>
+<span class="font-headline text-xl sm:text-2xl text-luxury-primary font-semibold">Nadi &amp; Jihva</span>
+<span class="text-xs sm:text-sm text-luxury-muted">Pulse &amp; Tongue Evaluation</span>
+</div>
+<div class="flex flex-col space-y-1.5 border-b md:border-b-0 md:border-r border-luxury-border-gold pb-4 md:pb-0 md:pr-4">
+<span class="text-xs uppercase tracking-wider text-luxury-muted font-bold">Focus Area</span>
+<span class="font-headline text-xl sm:text-2xl text-luxury-primary font-semibold">Metabolic &amp; Gut</span>
+<span class="text-xs sm:text-sm text-luxury-muted">Agni Rebalancing Regimens</span>
+</div>
+<div class="flex flex-col space-y-1.5">
+<span class="text-xs uppercase tracking-wider text-luxury-muted font-bold">Geographic Reach</span>
+<span class="font-headline text-xl sm:text-2xl text-luxury-primary font-semibold">Global Telecare</span>
+<span class="text-xs sm:text-sm text-luxury-muted">Pan-India &amp; International</span>
+</div>
+</div>
+</div>
+<!-- Expandable Clinical Dossier Sections -->
+<div class="py-space-md">
+<div class="max-w-2xl mb-8">
+<div class="inline-flex items-center gap-2 mb-2">
+<span class="w-2 h-2 rounded-full bg-luxury-accent"></span>
+<span class="text-xs uppercase tracking-widest text-luxury-accent font-bold">Clinical Dossier</span>
+</div>
+<h2 class="font-headline text-3xl sm:text-4xl text-luxury-primary font-normal tracking-tight">Explore Consultation Details</h2>
+<p class="text-sm sm:text-base text-luxury-muted mt-2">
+              Transparent, structured insight into clinical philosophy, evaluation stages, remote logistics, and regulatory credentials.
+            </p>
+</div>
+<div class="space-y-4" id="doctor-accordion">
+<!-- Accordion Item 01 -->
+<div class="accordion-item rounded-2xl bg-white border border-luxury-border-gold shadow-sm hover:border-luxury-accent transition-all overflow-hidden" data-expanded="true">
+<button aria-expanded="true" class="accordion-trigger w-full flex items-center justify-between p-6 text-left focus:outline-none" type="button">
+<div class="flex items-center gap-4 min-w-0">
+<span class="w-9 h-9 rounded-full bg-luxury-primary text-luxury-accent flex items-center justify-center text-xs font-bold flex-shrink-0 border border-luxury-accent/40 shadow-inner">01</span>
+<div>
+<span class="font-headline text-lg sm:text-xl text-luxury-primary font-semibold block">Doctor Introduction &amp; Philosophy</span>
+<span class="text-xs sm:text-sm text-luxury-muted block">Integrative care, constitutional understanding, and no cookie-cutter diets</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[26px] text-luxury-accent transition-transform duration-300 transform rotate-180 accordion-icon">keyboard_arrow_down</span>
+</button>
+<div class="accordion-content px-6 pb-6 pt-0 block border-t border-luxury-border-gold/40">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 pt-4">
+<div class="md:col-span-7 space-y-3.5 text-sm sm:text-base text-luxury-muted leading-relaxed">
+<p>
+                      Classical Ayurveda does not treat disease in isolation; it addresses the individual experiencing disharmony. Dr. Aditya Navnath Shinde’s consultations are structured to investigate the systemic root cause—whether derived from prolonged visceral stress, irregular chronobiology, or improper diet combinations (<em class="text-luxury-primary not-italic font-medium">Viruddha Ahara</em>).
+                    </p>
+<p>
+                      Every patient receives undivided attention without rushed conclusions. Treatments favor sustainable modifications in kitchen herbs, circadian rhythms, and non-toxic poly-herbal supplements rather than invasive or synthetic dependencies.
+                    </p>
+</div>
+<div class="md:col-span-5 bg-luxury-beige rounded-xl p-5 space-y-3 border border-luxury-border-gold">
+<span class="text-xs font-bold uppercase tracking-wider text-luxury-primary block flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-luxury-accent">spa</span>
+                      Clinical Principles
+                    </span>
+<div class="space-y-2.5">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-luxury-accent flex-shrink-0 mt-0.5">check_circle</span>
+<span class="text-xs sm:text-sm text-luxury-charcoal"><strong class="text-luxury-primary">Cause Over Symptom:</strong> Addressing Agni (digestive fire) and Ama (metabolic toxins).</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-luxury-accent flex-shrink-0 mt-0.5">check_circle</span>
+<span class="text-xs sm:text-sm text-luxury-charcoal"><strong class="text-luxury-primary">No Arbitrary Packages:</strong> Personalized formulations aligned strictly to your unique Dosha ratio.</span>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-luxury-accent flex-shrink-0 mt-0.5">check_circle</span>
+<span class="text-xs sm:text-sm text-luxury-charcoal"><strong class="text-luxury-primary">Collaborative Medicine:</strong> Transparent integration alongside any ongoing modern medical prescriptions.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion Item 02 -->
+<div class="accordion-item rounded-2xl bg-white border border-luxury-border-gold shadow-sm hover:border-luxury-accent transition-all overflow-hidden" data-expanded="false">
+<button aria-expanded="false" class="accordion-trigger w-full flex items-center justify-between p-6 text-left focus:outline-none" type="button">
+<div class="flex items-center gap-4 min-w-0">
+<span class="w-9 h-9 rounded-full bg-luxury-beige text-luxury-primary flex items-center justify-center text-xs font-bold flex-shrink-0 border border-luxury-border-gold">02</span>
+<div>
+<span class="font-headline text-lg sm:text-xl text-luxury-primary font-semibold block">The Three Consultation Pillars</span>
+<span class="text-xs sm:text-sm text-luxury-muted block">Pashyata (Listen), Pariksha (Examine), Upadesha (Guide)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[26px] text-luxury-accent transition-transform duration-300 accordion-icon">keyboard_arrow_down</span>
+</button>
+<div class="accordion-content px-6 pb-6 pt-0 hidden border-t border-luxury-border-gold/40">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4">
+<div class="p-5 rounded-xl bg-luxury-beige border border-luxury-border-gold flex flex-col justify-between space-y-3">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-xs text-luxury-accent font-bold uppercase tracking-wider">Pillar I</span>
+<span class="material-symbols-outlined text-[20px] text-luxury-primary">hearing</span>
+</div>
+<h3 class="font-headline text-base sm:text-lg text-luxury-primary font-semibold">Pashyata &amp; Prashna</h3>
+<p class="text-xs sm:text-sm text-luxury-muted leading-relaxed">
+                        Exhaustive listening to your personal symptom history, chronic sleep patterns, emotional disposition, and daily stress factors without interruptions.
+                      </p>
+</div>
+<span class="text-xs text-luxury-primary font-semibold pt-2 border-t border-luxury-border-gold/60">Focus: Complete Patient Context</span>
+</div>
+<div class="p-5 rounded-xl bg-luxury-beige border border-luxury-border-gold flex flex-col justify-between space-y-3">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-xs text-luxury-accent font-bold uppercase tracking-wider">Pillar II</span>
+<span class="material-symbols-outlined text-[20px] text-luxury-primary">biotech</span>
+</div>
+<h3 class="font-headline text-base sm:text-lg text-luxury-primary font-semibold">Ashtavidha Pariksha</h3>
+<p class="text-xs sm:text-sm text-luxury-muted leading-relaxed">
+                        Eight-fold assessment incorporating pulse (Nadi), tongue coating (Jihva), voice tone (Shabda), ocular indicators (Netra), and physical skin traits.
+                      </p>
+</div>
+<span class="text-xs text-luxury-primary font-semibold pt-2 border-t border-luxury-border-gold/60">Focus: Constitutional Tri-Dosha Map</span>
+</div>
+<div class="p-5 rounded-xl bg-luxury-beige border border-luxury-border-gold flex flex-col justify-between space-y-3">
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<span class="text-xs text-luxury-accent font-bold uppercase tracking-wider">Pillar III</span>
+<span class="material-symbols-outlined text-[20px] text-luxury-primary">menu_book</span>
+</div>
+<h3 class="font-headline text-base sm:text-lg text-luxury-primary font-semibold">Upadesha &amp; Pathya</h3>
+<p class="text-xs sm:text-sm text-luxury-muted leading-relaxed">
+                        Empowerment through actionable diet schedules, therapeutic herbs, restorative routine shifts, and follow-up checkpoints to trace physiological recovery.
+                      </p>
+</div>
+<span class="text-xs text-luxury-primary font-semibold pt-2 border-t border-luxury-border-gold/60">Focus: Tangible Daily Lifestyle</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion Item 03 -->
+<div class="accordion-item rounded-2xl bg-white border border-luxury-border-gold shadow-sm hover:border-luxury-accent transition-all overflow-hidden" data-expanded="false">
+<button aria-expanded="false" class="accordion-trigger w-full flex items-center justify-between p-6 text-left focus:outline-none" type="button">
+<div class="flex items-center gap-4 min-w-0">
+<span class="w-9 h-9 rounded-full bg-luxury-beige text-luxury-primary flex items-center justify-center text-xs font-bold flex-shrink-0 border border-luxury-border-gold">03</span>
+<div>
+<span class="font-headline text-lg sm:text-xl text-luxury-primary font-semibold block">Remote Ayurvedic Care Pathway</span>
+<span class="text-xs sm:text-sm text-luxury-muted block">Seamless digital consulting for outstation and busy working patients</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[26px] text-luxury-accent transition-transform duration-300 accordion-icon">keyboard_arrow_down</span>
+</button>
+<div class="accordion-content px-6 pb-6 pt-0 hidden border-t border-luxury-border-gold/40">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-4">
+<div class="p-4 rounded-xl bg-luxury-beige border border-luxury-border-gold space-y-2">
+<div class="w-8 h-8 rounded-full bg-luxury-primary text-luxury-accent flex items-center justify-center text-xs font-bold border border-luxury-accent/40">1</div>
+<h4 class="font-headline text-base text-luxury-primary font-semibold">Intake &amp; Slot</h4>
+<p class="text-xs sm:text-sm text-luxury-muted leading-relaxed">Choose an appointment window and submit preliminary health notes, dietary habits, and ongoing medical scans.</p>
+</div>
+<div class="p-4 rounded-xl bg-luxury-beige border border-luxury-border-gold space-y-2">
+<div class="w-8 h-8 rounded-full bg-luxury-primary text-luxury-accent flex items-center justify-center text-xs font-bold border border-luxury-accent/40">2</div>
+<h4 class="font-headline text-base text-luxury-primary font-semibold">Video Session</h4>
+<p class="text-xs sm:text-sm text-luxury-muted leading-relaxed">Engage in an in-depth 30-minute encrypted HD video dialogue with Dr. Aditya for tongue and visual evaluation.</p>
+</div>
+<div class="p-4 rounded-xl bg-luxury-beige border border-luxury-border-gold space-y-2">
+<div class="w-8 h-8 rounded-full bg-luxury-primary text-luxury-accent flex items-center justify-center text-xs font-bold border border-luxury-accent/40">3</div>
+<h4 class="font-headline text-base text-luxury-primary font-semibold">Prescription Dossier</h4>
+<p class="text-xs sm:text-sm text-luxury-muted leading-relaxed">Receive a digital prescription PDF detailing dosha analysis, diet charts, lifestyle advice, and herb dosages.</p>
+</div>
+<div class="p-4 rounded-xl bg-luxury-beige border border-luxury-border-gold space-y-2">
+<div class="w-8 h-8 rounded-full bg-luxury-primary text-luxury-accent flex items-center justify-center text-xs font-bold border border-luxury-accent/40">4</div>
+<h4 class="font-headline text-base text-luxury-primary font-semibold">Review &amp; Refine</h4>
+<p class="text-xs sm:text-sm text-luxury-muted leading-relaxed">Ongoing asynchronous WhatsApp check-ins and scheduled 3-week follow-up reviews to monitor vitality improvements.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion Item 04 -->
+<div class="accordion-item rounded-2xl bg-white border border-luxury-border-gold shadow-sm hover:border-luxury-accent transition-all overflow-hidden" data-expanded="false">
+<button aria-expanded="false" class="accordion-trigger w-full flex items-center justify-between p-6 text-left focus:outline-none" type="button">
+<div class="flex items-center gap-4 min-w-0">
+<span class="w-9 h-9 rounded-full bg-luxury-beige text-luxury-primary flex items-center justify-center text-xs font-bold flex-shrink-0 border border-luxury-border-gold">04</span>
+<div>
+<span class="font-headline text-lg sm:text-xl text-luxury-primary font-semibold block">Verified Practice &amp; Clinic Details</span>
+<span class="text-xs sm:text-sm text-luxury-muted block">Physical sanctuary locations, timing, and statutory compliance</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[26px] text-luxury-accent transition-transform duration-300 accordion-icon">keyboard_arrow_down</span>
+</button>
+<div class="accordion-content px-6 pb-6 pt-0 hidden border-t border-luxury-border-gold/40">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[22px] text-luxury-accent flex-shrink-0 mt-0.5">location_on</span>
+<div>
+<span class="font-headline text-base sm:text-lg text-luxury-primary font-semibold block">Primary Clinic Sanctuary</span>
+<span class="text-xs sm:text-sm text-luxury-muted block">Sector 20, Kharghar &amp; Ghansoli Consulting Center, Navi Mumbai, Maharashtra 410210</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-[22px] text-luxury-accent flex-shrink-0 mt-0.5">schedule</span>
+<div>
+<span class="font-headline text-base sm:text-lg text-luxury-primary font-semibold block">Clinical Timings</span>
+<span class="text-xs sm:text-sm text-luxury-muted block">Monday through Saturday: 10:00 AM – 1:00 PM &amp; 5:00 PM – 8:30 PM</span>
+<span class="text-xs sm:text-sm text-luxury-muted block">Sunday: By Advance Appointment</span>
+</div>
+</div>
+</div>
+<div class="p-5 rounded-xl bg-luxury-beige border border-luxury-border-gold space-y-3">
+<span class="text-xs font-bold text-luxury-primary uppercase tracking-wider block flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-luxury-accent">verified</span>
+                      Official Direct Channels
+                    </span>
+<div class="space-y-2.5 text-xs sm:text-sm">
+<p class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-luxury-accent">phone</span>
+<a class="hover:text-luxury-accent text-luxury-charcoal font-medium transition-colors" href="tel:+919657969379">+91 96579 69379</a>
+</p>
+<p class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-luxury-accent">mail</span>
+<a class="hover:text-luxury-accent text-luxury-charcoal font-medium transition-colors" href="mailto:consult@dradityaayurveda.com">consult@dradityaayurveda.com</a>
+</p>
+<p class="flex items-center gap-2.5 text-luxury-muted">
+<span class="material-symbols-outlined text-[18px] text-luxury-accent">verified_user</span>
+<span>Recognized under Central Council of Indian Medicine (CCIM) norms</span>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Conversion Banner in Deep Forest Green -->
+<div class="my-space-xl">
+<div class="relative bg-luxury-primary text-[#F7F3EA] rounded-2xl overflow-hidden p-8 sm:p-12 shadow-[0_16px_36px_rgba(11,59,46,0.24)] border border-luxury-accent/40">
+<div class="absolute -right-16 -top-16 w-64 h-64 rounded-full bg-luxury-secondary/40 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="space-y-2 text-center md:text-left max-w-xl">
+<span class="inline-block px-3.5 py-1 rounded-full bg-luxury-secondary/80 border border-luxury-accent/40 text-xs text-luxury-accent uppercase tracking-widest font-bold">Direct Access</span>
+<h3 class="font-headline text-2xl sm:text-3xl lg:text-4xl text-[#F7F3EA] font-normal leading-tight">
+                  Ready for a thorough, unhurried health evaluation?
+                </h3>
+<p class="text-sm sm:text-base text-[#F7F3EA]/80 pt-1">
+                  Schedule your 30-minute private consultation with Dr. Aditya. Available at our Navi Mumbai clinic or via encrypted video link globally.
+                </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-3 flex-shrink-0 w-full md:w-auto">
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-luxury-accent hover:bg-luxury-accent-hover text-luxury-primary font-bold text-sm sm:text-base tracking-wide transition-all shadow-md hover:shadow-xl" data-path="appointment-booking" href="appointment.html">
+<span class="material-symbols-outlined text-[20px]">event_available</span>
+<span class="whitespace-nowrap">Schedule Consultation</span>
+</a>
+<a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-luxury-primary/80 hover:bg-luxury-secondary text-[#F7F3EA] border border-luxury-accent/50 font-semibold text-sm sm:text-base transition-all shadow-sm" href="https://wa.me/919657969379" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-luxury-accent">chat</span>
+<span class="whitespace-nowrap">Message on WhatsApp</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion Script -->
+<script>
+      (function initAccordion() {
+        const accordion = document.getElementById('doctor-accordion');
+        if (!accordion) return;
+
+        const triggers = accordion.querySelectorAll('.accordion-trigger');
+
+        triggers.forEach(trigger => {
+          trigger.addEventListener('click', () => {
+            const item = trigger.closest('.accordion-item');
+            const content = item.querySelector('.accordion-content');
+            const icon = trigger.querySelector('.accordion-icon');
+            const numberBadge = trigger.querySelector('span:first-child');
+            const isExpanded = item.getAttribute('data-expanded') === 'true';
+
+            // Toggle state
+            if (isExpanded) {
+              content.classList.add('hidden');
+              content.classList.remove('block');
+              icon.classList.remove('rotate-180');
+              item.setAttribute('data-expanded', 'false');
+              trigger.setAttribute('aria-expanded', 'false');
+              if (numberBadge) {
+                numberBadge.classList.remove('bg-luxury-primary', 'text-luxury-accent', 'border-luxury-accent/40', 'shadow-inner');
+                numberBadge.classList.add('bg-luxury-beige', 'text-luxury-primary', 'border-luxury-border-gold');
+              }
+            } else {
+              content.classList.remove('hidden');
+              content.classList.add('block');
+              icon.classList.add('rotate-180');
+              item.setAttribute('data-expanded', 'true');
+              trigger.setAttribute('aria-expanded', 'true');
+              if (numberBadge) {
+                numberBadge.classList.remove('bg-luxury-beige', 'text-luxury-primary', 'border-luxury-border-gold');
+                numberBadge.classList.add('bg-luxury-primary', 'text-luxury-accent', 'border-luxury-accent/40', 'shadow-inner');
+              }
+            }
+          });
+        });
+      })();
+    </script>
+</main>
+<!-- Floating Direct Action CTAs -->
+<div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
+<a aria-label="Chat on WhatsApp" class="w-12 h-12 rounded-full bg-luxury-primary text-luxury-accent flex items-center justify-center shadow-[0_6px_20px_rgba(11,59,46,0.4)] hover:scale-110 transition-transform ring-2 ring-luxury-accent" href="https://wa.me/919657969379" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+</a>
+<a aria-label="Direct Call" class="w-12 h-12 rounded-full bg-[#FFFFFF] text-luxury-primary flex items-center justify-center shadow-[0_6px_20px_rgba(11,59,46,0.18)] hover:scale-110 transition-transform ring-1 ring-luxury-accent/60" href="tel:+919657969379">
+<span class="material-symbols-outlined text-[24px]">call</span>
+</a>
+</div>
+<!-- High-End Luxury Footer in Deep Forest Green (#0B3B2E) -->
+<footer class="w-full bg-luxury-primary text-[#F7F3EA] border-t border-luxury-accent/30 pt-16 pb-12 mt-space-xl">
+<div class="max-w-[1360px] mx-auto px-gutter-sm lg:px-gutter-lg">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter lg:gap-gutter-lg pb-12">
+<div class="md:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<img alt="Dr. Aditya Ayurveda Emblem" class="h-9 w-auto object-contain brightness-110" src="https://lh3.googleusercontent.com/aida/AEtjO1W8gictkYE2ML89ZvZXWRRGCrzNRY_gHumv0OFT_MN8Caq8FjJrtRor1PQ3T4Yohn1xO0ZYI_Nt_s29FHoPom__qUgS7l16M3SXIZJOqQri1dqTUy2tlLau6gGjlYD-0ah3DUngmPNpzfiwvcfFIxPh3Tpb9XaVdW-7tPs11H543JAJH6P_Hh6luFH2wek48UAiO0zfD0H7obTLDozJYGaOsD2kYOJTeBsagJw_ZMXEojjIy7ueAViDWhrg"/>
+<span class="font-headline text-xl text-[#F7F3EA] font-semibold tracking-wide">Dr. Aditya Ayurveda Clinic</span>
+</div>
+<p class="text-sm text-[#F7F3EA]/75 max-w-lg leading-relaxed">
+            An integrative Ayurvedic sanctuary uniting classical pulse diagnosis (Nadi Pariksha), Panchakarma protocols, and modern nutritional evidence for restorative vitality.
+          </p>
+<div class="pt-2">
+<span class="inline-block px-3 py-1 rounded-full bg-luxury-secondary/60 text-luxury-accent font-semibold text-xs uppercase tracking-wider border border-luxury-accent/30">
+              Reg. Medical Practitioner | BAMS (MUHS)
+            </span>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-lg text-luxury-accent font-semibold tracking-wide">Sanctuary Pages</h4>
+<ul class="space-y-2.5 text-xs sm:text-sm text-[#F7F3EA]/80">
+<li><a class="hover:text-luxury-accent transition-colors" data-path="home" href="index.html">Home Overview</a></li>
+<li><a class="hover:text-luxury-accent transition-colors" data-path="services" href="services.html">Clinical Treatments &amp; Panchakarma</a></li>
+<li><a class="text-luxury-accent font-medium transition-colors" data-path="about-doctor" href="about.html">Doctor Credentials &amp; Philosophy</a></li>
+<li><a class="hover:text-luxury-accent transition-colors" data-path="appointment-booking" href="appointment.html">Schedule Consultation</a></li>
+<li><a class="hover:text-luxury-accent transition-colors" data-path="contact-&amp;-directions" href="contact.html">Clinic Directions &amp; Inquiries</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-headline text-lg text-luxury-accent font-semibold tracking-wide">Clinic Location</h4>
+<p class="text-xs sm:text-sm text-[#F7F3EA]/80 leading-relaxed">
+            Sector 20, Kharghar &amp; Ghansoli,<br/>Navi Mumbai, Maharashtra, 410210, India
+          </p>
+<div class="space-y-1.5 text-xs sm:text-sm text-[#F7F3EA]/90">
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-luxury-accent">call</span>
+<a class="hover:text-luxury-accent transition-colors" href="tel:+919657969379">+91 96579 69379</a>
+</p>
+<p class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-luxury-accent">mail</span>
+<a class="hover:text-luxury-accent transition-colors" href="mailto:consult@dradityaayurveda.com">consult@dradityaayurveda.com</a>
+</p>
+</div>
+<p class="text-xs uppercase tracking-wider text-luxury-accent pt-1 font-semibold">Mon – Sat: 10:00 AM – 8:00 PM</p>
+</div>
+</div>
+<div class="border-t border-luxury-accent/20 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+<p class="text-xs text-[#F7F3EA]/70 text-center sm:text-left">
+          © 2025 Dr. Aditya Ayurveda Clinic. All Rights Reserved. Ethical Ayurvedic Healthcare.
+        </p>
+<p class="text-[11px] text-[#F7F3EA]/60 text-center sm:text-right max-w-md">
+          Medical Disclaimer: Diagnostic regimens, rasayanas, and clinical consultations are customized based on Prakriti and Dosha evaluation. Never discontinue ongoing pharmaceutical therapies without physician consultation.
+        </p>
+</div>
+</div>
+</footer>
+</body></html>
